@@ -19,3 +19,6 @@ some countries were not available. Those data were imputed using multiple imputa
 Neural Networks were fitted on data. At the end of the research it was found that variables
 Agriculture productivity index, Health care index, Environmental Performance index and
 Literacy rate are the most important variables to predicting poverty.
+
+<img width="542" height="266" alt="Screenshot 2025-08-07 at 3 16 56 PM" src="https://github.com/user-attachments/assets/521f3deb-363f-483e-ac36-23da65a3f10c" />
+<img width="593" height="292" alt="Screenshot 2025-08-07 at 3 17 14 PM" src="https://github.com/user-attachments/assets/2427098d-7d41-4684-90e0-80dd947d1f0d" />
