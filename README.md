@@ -25,5 +25,8 @@ Example parallel co-ordinates plot used in missing value analysis
 <img width="542" height="266" alt="Screenshot 2025-08-07 at 3 16 56 PM" src="https://github.com/user-attachments/assets/521f3deb-363f-483e-ac36-23da65a3f10c" /> 
 <img width="593" height="292" alt="Screenshot 2025-08-07 at 3 17 14 PM" src="https://github.com/user-attachments/assets/2427098d-7d41-4684-90e0-80dd947d1f0d" />
 
+Actual vs Predicted Value plot for a Random Forest model
+
+<img width="446" height="245" alt="Screenshot 2025-08-07 at 3 19 58 PM" src="https://github.com/user-attachments/assets/560cef10-760e-4b77-8ec2-98e3c7b60de2" />
 
 
