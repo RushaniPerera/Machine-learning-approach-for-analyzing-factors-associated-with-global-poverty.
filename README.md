@@ -20,13 +20,16 @@ Neural Networks were fitted on data. At the end of the research it was found tha
 Agriculture productivity index, Health care index, Environmental Performance index and
 Literacy rate are the most important variables to predicting poverty.
 
-Example parallel co-ordinates plot used in missing value analysis
+**Example parallel co-ordinates plot used in missing value analysis**
 
 <img width="542" height="266" alt="Screenshot 2025-08-07 at 3 16 56 PM" src="https://github.com/user-attachments/assets/521f3deb-363f-483e-ac36-23da65a3f10c" /> 
 <img width="593" height="292" alt="Screenshot 2025-08-07 at 3 17 14 PM" src="https://github.com/user-attachments/assets/2427098d-7d41-4684-90e0-80dd947d1f0d" />
 
-Actual vs Predicted Value plot for a Random Forest model
+**Actual vs Predicted Value plot for a Random Forest model**
 
 <img width="446" height="245" alt="Screenshot 2025-08-07 at 3 19 58 PM" src="https://github.com/user-attachments/assets/560cef10-760e-4b77-8ec2-98e3c7b60de2" />
 
+**Variable importance plot of Random Forest Best Model**
+
+<img width="550" height="327" alt="Screenshot 2025-08-07 at 3 21 16 PM" src="https://github.com/user-attachments/assets/0eb29673-6b2c-4b82-9da7-0f749b89af7a" />
 
