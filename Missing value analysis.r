@@ -22,17 +22,6 @@ head(pdf)
 parcoordMiss(pdf,highlight=("Environmental"), alpha=1,cex.axis =0.7,ylab=c('Environmental'))
 parcoordMiss(pdf,highlight=("Literacy"), alpha=1,cex.axis =0.7,ylab=c('Literacy'))
 parcoordMiss(pdf,highlight=("Cultural"), alpha=1,cex.axis =0.7,ylab=c('Cultural'))
-parcoordMiss(pdf,highlight=("Economic"), alpha=1,cex.axis =0.7,ylab=c('Economic'))
-parcoordMiss(pdf,highlight=("Household"), alpha=1,cex.axis =0.7,ylab=c('Household'))
-parcoordMiss(pdf,highlight=("GDP"), alpha=1,cex.axis =0.7,ylab=c('GDP'))
-parcoordMiss(pdf,highlight=("Health"), alpha=1,cex.axis =0.7,ylab=c('Health'))
-parcoordMiss(pdf,highlight=("Democracy"), alpha=1,cex.axis =0.7,ylab=c('Democracy'))
-parcoordMiss(pdf,highlight=("Logistics"), alpha=1,cex.axis =0.7,ylab=c('Logistics'))
-parcoordMiss(pdf,highlight=("Population"), alpha=1,cex.axis =0.7,ylab=c('Population'))
-parcoordMiss(pdf,highlight=("Food"), alpha=1,cex.axis =0.7,ylab=c('Food'))
-parcoordMiss(pdf,highlight=("Agriculture"), alpha=1,cex.axis =0.7,ylab=c('Agriculture'))
-parcoordMiss(pdf,highlight=("Unemployment"), alpha=1,cex.axis =0.7,ylab=c('Unemployment'))
-
 
 ######## Imputation of data ############
 library('mice')
@@ -44,29 +33,16 @@ imputed_Data <- mice(df1, m=5, maxit = 750, method = 'cart', seed = 500)
 completeData <- complete(imputed_Data,2)
 cd = data.frame(completeData)
 str(cd)
-######## wRITING COMPLETE DATA INTO A CSV FILE ####
+
+######## WRITING COMPLETE DATA INTO A CSV FILE ####
 write.csv(cd,'imputeddata.csv')
 
 df2 = read.csv("E:\\Rushani\\RUSH RESEARCH\\imputeddata.csv", na="")
 
 densityplot(imputed_Data)
 sum(is.na(cd$percentage)==TRUE)
-sum(is.na(cd$Environmental)==TRUE)
-sum(is.na(cd$Literacy)==TRUE)
-sum(is.na(cd$Cultural)==TRUE)
-sum(is.na(cd$Economic)==TRUE)
-sum(is.na(cd$Household)==TRUE)
-sum(is.na(cd$GDP)==TRUE)
-sum(is.na(cd$Health)==TRUE)
-sum(is.na(cd$Democracy)==TRUE)
-sum(is.na(cd$Logistics)==TRUE)
-sum(is.na(cd$Population)==TRUE)
-sum(is.na(cd$Food)==TRUE)
-sum(is.na(cd$Agriculture)==TRUE)
-sum(is.na(cd$Unemployment)==TRUE)
 
-
-############# random forest model  #############
+############# RANDOM FOREST MODEL  #############
 
 ######## train test splitting #########
 
@@ -425,6 +401,7 @@ plot(testdata$percentage,type = "l",col = "red", xlab = "Index", ylab = "Percent
      main = "Variation of predicted and actual value plot")
 
 lines(pred_y1, type = "l", col = "blue")
+
 
 
 
